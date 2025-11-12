@@ -72,16 +72,8 @@ npm install
 
 - Start dev server (default: http://localhost:5173)
   - `npm run dev`
-
-- Lint
-  - `npm run lint`
-
-- Build for production
-  - `npm run build`
-
-- Preview built app (after `npm run build`)
-  - `npm run preview`
-
+ 
+    
 Note: The chat room component currently connects to the backend at `http://localhost:8080/ws`.
 Ensure the backend is running before starting to chat.
 
@@ -113,9 +105,3 @@ Frontend (npm in `chatt-app-frontend`)
 - Start the backend on port 8080: `./gradlew bootRun`.
 - Start the frontend dev server (default port 5173): `npm run dev` inside `chatt-app-frontend`.
 - Open the frontend in your browser (Vite prints the URL, typically http://localhost:5173) and join the chat. Make sure the backend is running so the WebSocket can connect.
-
-## Deployment
-
-- Backend: Build with `./gradlew build` and deploy the resulting JAR.
-- Frontend: Build with `npm run build` and host the `dist/` directory on a static file server.
-  - TODO: Provide a unified deployment approach (e.g., serve frontend from Spring Boot or configure reverse proxy for both services).
